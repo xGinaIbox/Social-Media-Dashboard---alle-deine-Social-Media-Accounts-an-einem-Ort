@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Media Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Social Media Dashboard</h1>
+      <p>Alle deine Social Media Accounts an einem Ort.</p>
+    </header>
+
+    <section class="cards" id="accountCards">
+      <!-- Karten werden von JavaScript eingefügt -->
+    </section>
+
+    <section class="add-card">
+      <h2>Account hinzufügen</h2>
+      <form id="addAccountForm">
+        <label>
+          Plattform
+          <select id="platform" required>
+            <option value="instagram">Instagram</option>
+            <option value="twitter">Twitter</option>
+            <option value="facebook">Facebook</option>
+            <option value="linkedin">LinkedIn</option>
+            <option value="youtube">YouTube</option>
+            <option value="tiktok">TikTok</option>
+            <option value="custom">Andere</option>
+          </select>
+        </label>
+        <label>
+          URL
+          <input type="url" id="accountUrl" placeholder="https://..." required />
+        </label>
+        <button type="submit">Hinzufügen</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
